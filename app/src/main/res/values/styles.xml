@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/toolbarColor</item>
+        <item name="colorPrimaryDark">@color/notificationColor</item>
+        <item name="colorAccent">@color/buttonColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:editTextColor">@color/textColor</item>
+        <item name="android:borderlessButtonStyle">@color/buttonColor</item>
+        <item name="android:navigationBarColor">@color/backgroundColor</item>
+        <item name="android:colorButtonNormal">@color/buttonColor</item>
+        <item name="android:windowBackground">@color/notificationColor</item>
+    </style>
+    <style name="AppThemeNoBar" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/toolbarColor</item>
+        <item name="colorPrimaryDark">@color/notificationColor</item>
+        <item name="colorAccent">@color/buttonColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:editTextColor">@color/textColor</item>
+        <item name="android:borderlessButtonStyle">@color/buttonColor</item>
+        <item name="android:navigationBarColor">@color/backgroundColor</item>
+        <item name="android:colorButtonNormal">@color/buttonColor</item>
+        <item name="android:windowBackground">@color/notificationColor</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+apply plugin: 'project-report'
+
+android {
+    signingConfigs {
+        employeeTracker {
+            storeFile file('D:/marti/Projects/employeeTracker/employeeTracker.jks')
+            keyAlias 'key0'
+            keyPassword 'hi'
+            storePassword 'hi'
+        }
+        config {
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.marti.employeetracker"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.employeeTracker
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.google.firebase:firebase-auth:11.6.0'
+    implementation 'com.google.firebase:firebase-database:11.6.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.google.android.gms:play-services:11.6.0'
+    compile 'com.android.support:support-annotations:27.0.1'
+}
+
+
+apply plugin: 'com.google.gms.google-services'

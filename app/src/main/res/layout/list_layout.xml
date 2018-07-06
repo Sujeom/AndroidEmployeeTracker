@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listOptions"
+    android:padding="10dp"
+    android:background="@color/listColor">
+    <ImageView
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:id="@+id/imageList"
+        android:src="@drawable/blank"/>
+
+    <TextView
+        android:id="@+id/textListFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/imageList"
+        android:layout_toRightOf="@+id/imageList"
+        android:text="hello"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/textListLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textListFirst"
+        android:layout_alignStart="@+id/textListFirst"
+        android:layout_below="@+id/textListFirst"
+        android:text="goodbye"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+
+
+</RelativeLayout>

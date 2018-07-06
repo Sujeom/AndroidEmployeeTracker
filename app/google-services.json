@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "925973638061",
+    "firebase_url": "https://employeetracker-97764.firebaseio.com",
+    "project_id": "employeetracker-97764",
+    "storage_bucket": "employeetracker-97764.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925973638061:android:38cda4263c7fc10a",
+        "android_client_info": {
+          "package_name": "com.example.marti.employeetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925973638061-8jbf7hcpso39sct5k9hraa4iim18lta1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.marti.employeetracker",
+            "certificate_hash": "ea715eeaff0b8efc5597f4ce01a122bf8f2c831e"
+          }
+        },
+        {
+          "client_id": "925973638061-cfsdbkh3u04opeevk9ga2vdut2nqs3sq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV8oWTBAKuxPfW5XjKWy3AnTWPp3ag2lI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925973638061-cfsdbkh3u04opeevk9ga2vdut2nqs3sq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

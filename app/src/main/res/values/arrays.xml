@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name = "adminList">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="databaseEntries">
+        <item>username</item>
+        <item>firstName</item>
+        <item>lastName</item>
+        <item>groupId</item>
+        <item>adminId</item>
+        <item>adminBit</item>
+        <item>latitude</item>
+        <item>logitude</item>
+        <item>photo</item>
+    </string-array>
+</resources>

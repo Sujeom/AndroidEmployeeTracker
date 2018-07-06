@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/employeePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbarColor"
+    tools:context="com.example.marti.employeetracker.EmployeePage"
+
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@android:dimen/notification_large_icon_height"
+
+
+        >
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:context="com.example.marti.employeetracker.AdminPage"
+            tools:layout_editor_absoluteX="0dp">
+
+        </fragment>
+
+        <Button
+            android:id="@+id/optionB"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/listColor"
+            android:text="disable visibility"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </Button>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/selfie"-->
+    <!--android:layout_width="100sp"-->
+    <!--android:layout_height="100sp"-->
+    <!--android:layout_gravity="top|right"-->
+    <!--android:src="@drawable/blank" />-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+
+        <Button
+            android:id="@+id/list"
+            android:layout_width="175sp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:background="@color/buttonColor"
+            android:text="Display List"
+            android:textColor="@color/textColor"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <Button
+            android:id="@+id/ping"
+            android:layout_width="175sp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom|left"
+            android:background="@color/buttonColor"
+            android:text="Ping Employee"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/list"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ListView
+            android:id="@+id/listE"
+            android:layout_width="wrap_content"
+            android:layout_height="301dp"
+            android:layout_above="@+id/list"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/listColor"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+
+            >
+
+        </ListView>
+
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_toLeftOf="@+id/list"
+            android:layout_toStartOf="@+id/list"
+            android:gravity="center"
+            android:text="lName"
+            android:textAppearance="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/cast_expanded_controller_margin_between_status_text_and_seek_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/text2"
+            android:gravity="center"
+            android:text="fName"
+            android:textAppearance="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/cast_expanded_controller_margin_between_status_text_and_seek_bar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Name:"
+            android:textSize="@dimen/cast_expanded_controller_margin_between_status_text_and_seek_bar" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:text="Group ID:"
+            android:textSize="@dimen/cast_expanded_controller_margin_between_status_text_and_seek_bar" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraintLayout">
+
+
+            <ImageButton
+                android:id="@+id/setButton"
+                android:layout_width="65dp"
+                android:layout_height="56dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="320dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/dotswhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="320dp">
+
+
+            </ImageButton>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
